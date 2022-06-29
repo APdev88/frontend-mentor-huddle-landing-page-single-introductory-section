@@ -1,0 +1,61 @@
+@media (max-width: 768px) {
+  body {
+    margin: 10px;
+    background: url("../images/bg-mobile.svg");
+    background-size: center;
+    background-repeat: no-repeat;
+    background-color: $violet;
+  }
+
+  .huddle {
+    &__header {
+      margin-top: 30px;
+
+      img {
+        width: 130px;
+      }
+    }
+
+    &__hero {
+      flex-direction: column;
+      &__left {
+        width: 100%;
+      }
+
+      &__right {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        justify-content: center;
+
+        h1 {
+          font-size: 25px;
+        }
+
+        p {
+          font-size: 15px;
+        }
+
+        button {
+          padding: 7px 60px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    &__footer {
+      justify-content: center;
+      margin: 60px auto 50px;
+
+      &__icon {
+        margin: 0 5px;
+
+        i {
+          font-size: 15px;
+          height: 35px;
+          width: 35px;
+        }
+      }
+    }
+  }
+}

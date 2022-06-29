@@ -1,0 +1,93 @@
+@import "config";
+
+.huddle {
+  width: 90%;
+  margin: 0 auto;
+
+  &__header {
+    margin-top: 50px;
+
+    img {
+      width: 200px;
+    }
+  }
+
+  &__hero {
+    display: flex;
+    margin-top: 50px;
+
+    &__left {
+      width: 55%;
+    }
+
+    &__right {
+      width: 45%;
+      display: flex;
+      justify-content: right;
+
+      &__text {
+        width: 90%;
+        margin-top: 50px;
+
+        h1 {
+          font-size: 39px;
+        }
+
+        p {
+          margin-top: 20px;
+          font-family: "Open Sans", sans-serif;
+          line-height: 1.6;
+          font-size: 18px;
+        }
+
+        button {
+          cursor: pointer;
+          margin-top: 23px;
+          border: none;
+          background-color: #fff;
+          padding: 15px 62px;
+          border-radius: 50px;
+          font-size: inherit;
+          color: $violet;
+          box-shadow: 0px 4px 13px -2px rgba(0, 0, 0, 0.75);
+          font-family: inherit;
+
+          &:hover {
+            background: $magenta;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+
+    &__icon {
+      text-align: center;
+      margin-right: 20px;
+
+      i {
+        color: #fff;
+        font-size: 19px;
+        border: 1px solid #fff;
+        padding: 10px;
+        border-radius: 50px;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          border: 1px solid $magenta;
+          color: $magenta;
+        }
+      }
+    }
+  }
+}
+
+@import "mobile";
